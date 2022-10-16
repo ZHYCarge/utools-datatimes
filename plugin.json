@@ -1,0 +1,11 @@
+{
+	"preload": "preload.js",
+	"logo": "logo.png",
+	"features": [
+		{
+		  "code": "time",
+		  "explain": "获取当前系统时间",
+			"cmds":["datatime", "times"]
+		}
+	]
+}
