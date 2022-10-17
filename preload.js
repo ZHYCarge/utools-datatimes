@@ -15,11 +15,15 @@ window.exports = {
       args: {
          // 进入插件应用时调用
          enter: (action) => {
+let times = aaa()
             // action = { code, type, payload }
             window.utools.hideMainWindow()
-		window.utools.copyText(aaa())
+		window.utools.copyText(times)
             // do some thing
-            window.utools.outPlugin()
+window.utools.showNotification('当前时间:'+times)
+//window.utools.ubrowser.paste(times)
+window.utools.simulateKeyboardTap('v', 'ctrl')
+            window.utools.onPluginOut()
          }  
       } 
    }
